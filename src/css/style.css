@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,12 +8,13 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #4F4F4F;
-    color: #CFCFCF;
+    background-color: #1C1C1E;
+    color: #F5F5F7;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
+    padding-top: 82px;
 }
 
 .header {
@@ -30,12 +29,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #1f1f1f;
-    color: #CFCFCF;
-}
-
-i {
-    transition: transform 0.5s ease;
+    background-color: #4A4A4D;
 }
 
 ul,
@@ -43,83 +37,33 @@ li,
 a {
     text-decoration: none;
     list-style-type: none;
-    color: #CFCFCF;
+    color: #FFFFFF;
 }
 
-.home,
-.html,
-.contact {
+.nav-item {
     padding: 1rem 0;
 }
 
 .navbar-links {
     display: flex;
-    gap: 8rem;
+    gap: 5rem;
 }
 
 .navbar-links li:last-child {
     margin-right: 10rem;
 }
 
-.html {
-    position: relative;
-}
-
-.html:hover .html-chevron {
-    transform: rotate(-180deg);
-}
-
-.html-sub-menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 3.45rem;
-    left: -5%;
-    background-color: #1f1f1f;
-    width: 110%;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    max-height: 0;
-}
-
-.html-sub-menu li {
-    padding: 0.75rem;
-}
-
-.html-sub-menu li:last-child {
-    border-bottom: none;
-}
-
-.html-sub-menu li a {
-    text-decoration: none;
-    color: #CFCFCF;
-}
-
-.html:hover .html-sub-menu {
-    max-height: 300px;
-}
-
-.content-wrapper {
-    background-color: #333333;
-    border-radius: 15px;
-    padding: 20px;
-    width: 80%;
-    max-width: 1200px;
-    margin-top: 20px;
-    margin-top: 80px;
-}
-
-.section {
+section {
     padding: 20px;
     margin: 20px 0;
-    background-color: #555555;
+    background-color: #3A3A3C;
     border-radius: 10px;
 }
 
 .section-content {
     display: flex;
     align-items: center;
+    color: #E0E0E0;
 }
 
 .section-image {
