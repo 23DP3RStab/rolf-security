@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #4F4F4F;
+    color: #CFCFCF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #1f1f1f;
+    color: #CFCFCF;
+}
+
+i {
+    transition: transform 0.5s ease;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #CFCFCF;
+}
+
+.home,
+.html,
+.contact {
+    padding: 1rem 0;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 8rem;
+}
+
+.navbar-links li:last-child {
+    margin-right: 10rem;
+}
+
+.html {
+    position: relative;
+}
+
+.html:hover .html-chevron {
+    transform: rotate(-180deg);
+}
+
+.html-sub-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.45rem;
+    left: -5%;
+    background-color: #1f1f1f;
+    width: 110%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+}
+
+.html-sub-menu li {
+    padding: 0.75rem;
+}
+
+.html-sub-menu li:last-child {
+    border-bottom: none;
+}
+
+.html-sub-menu li a {
+    text-decoration: none;
+    color: #CFCFCF;
+}
+
+.html:hover .html-sub-menu {
+    max-height: 300px;
+}
+
+.content-wrapper {
+    background-color: #333333;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-top: 80px;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #555555;
+    border-radius: 10px;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+}
+
+.section-image {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.section-text {
+    flex: 1;
+    max-width: 700px;
+}
