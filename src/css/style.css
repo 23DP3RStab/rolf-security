@@ -12,9 +12,13 @@ body {
     color: #F5F5F7;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0;
     padding-top: 82px;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
 }
 
 .header {
@@ -27,9 +31,10 @@ body {
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     background-color: #4A4A4D;
+    padding: 0 1rem;
 }
 
 ul,
@@ -53,25 +58,52 @@ a {
     margin-right: 10rem;
 }
 
-section {
-    padding: 20px;
-    margin: 20px 0;
+.navbar-links a {
+    font-size: 1.2rem;
+}
+
+.nav-logo {
+    height: 50px;
+}
+
+.nav-logo img {
+    height: 100%;
+}
+
+.hero {
+    text-align: left;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
     background-color: #3A3A3C;
-    border-radius: 10px;
+    color: #cfcfcf;
+    width: 100%;
 }
 
-.section-content {
-    display: flex;
-    align-items: center;
-    color: #E0E0E0;
-}
-
-.section-image {
-    max-width: 150px;
-    margin-right: 20px;
-}
-
-.section-text {
-    flex: 1;
-    max-width: 700px;
-}
