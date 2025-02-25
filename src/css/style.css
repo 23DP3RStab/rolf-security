@@ -77,7 +77,6 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 5rem;
-    margin-bottom: 2rem;
 }
 
 .hero h1 {
@@ -94,6 +93,24 @@ ul {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     width: 50%;
+}
+
+.hero div {
+    display: flex;
+    gap: 2rem;
+}
+
+.cta {
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.cta span {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background-color: #4A4A4D;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
 .features {
@@ -135,11 +152,25 @@ ul {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .pricing-card ul {
     flex: 1;
     line-height: 2rem;
+}
+
+.pricing-card li:last-child {
+    margin-top: 1rem;
+}
+
+.pricing-card li a span {
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #4A4A4D;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 .pricing-card h3 {
@@ -197,29 +228,30 @@ ul {
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 2rem;
 }
 
 .about h2 {
-    align-self: flex-start;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .about p {
-    flex: 1;
-    width: 50%;
+    width: 40%;
 }
 
-.contact {
-    flex: 1;
-    background-color: #2A2A2C;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#p-right {
+    text-align: left;
+    margin-left: auto;
+}
+
+.about div {
+    width: 100%;
+    display: flex;
 }
 
 section {
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
 }
 
 footer {

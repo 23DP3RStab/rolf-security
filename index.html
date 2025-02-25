@@ -8,9 +8,10 @@
     <link rel="icon" href="src/images/logo.ico" type="image/x-icon">
     <meta name="description" content="Rolf Security offers the best antivirus software to protect your digital life. Trusted by millions for ensuring online safety.">
     <meta name="keywords" content="Antivirus, Cybersecurity, Online Protection, Antivirus Software">
+    <meta name="author" content="Rolf Security Team">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="nav">
         <nav class="nav">
             <!-- menu-->
             <div class="nav-logo">
@@ -38,9 +39,9 @@
                     <a href="#about">About us</a>
                 </li>
                 <!-- 6.menu poga-->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#contact">Contact</a>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </header>
@@ -50,8 +51,10 @@
             <h1>Stay Safe with Rolf Security</h1>
             <h3>Next-gen antivirus: fast, powerful, and hassle-free.</h3>
             <p>At Rolf Security, our mission is simple: keep you and your digital world safe. Our advanced antivirus software combines real-time detection, machine learning, and a user-friendly interface to deliver top-tier protection without slowing you down. Experience the peace of mind that comes from knowing your devices, data, and privacy are in good hands.</p>
-            <button class="cta">Learn More</button>
-            <button class="cta">View Pricing Plans</button>
+            <div>
+                <a class="cta" href="#features"><span>Learn More</span></a>
+                <a class="cta" href="#pricing"><span>View Pricing Plans</span></a>
+            </div>
         </section>
         
         <section class="features" id="features">
@@ -94,7 +97,7 @@
                         <li>- Automatic Updates</li>
                         <li>1 Device</li>
                         <li>$29.99/year</li>
-                        <li><button>Buy Basic</button></li>
+                        <li><a class="cta" href="#"><span>Buy Basic</span></a></li>
                     </ul>
                 </div>
 
@@ -107,7 +110,7 @@
                         <li>- Scheduled Scans</li>
                         <li>Up to 3 Devices</li>
                         <li>$59.99/year</li>
-                        <li><button>Buy Pro</button></li>
+                        <li><a class="cta" href="#"><span>Buy Pro</span></a></li>
                     </ul>
                 </div>
 
@@ -121,7 +124,7 @@
                         <li>- Priority Support</li>
                         <li>Up to 5 Devices</li>
                         <li>$79.99/year</li>
-                        <li><button>Buy Premium</button></li>
+                        <li><a class="cta" href="#"><span>Buy Premium</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -152,13 +155,17 @@
 
         <section class="about" id="about">
             <h2>Meet Rolf Security: Your Partner in Cyber Defense</h2>
-            <p>Founded by a team of cybersecurity enthusiasts, Rolf Security has one mission: to create innovative, user-friendly antivirus solutions that protect people from the ever-changing world of digital threats. Our team is composed of software engineers, threat analysts, and customer service professionals dedicated to one thing—keeping you safe online.</p>
-            <p>Over the years, we've achieved multiple industry accolades and formed strategic partnerships to ensure our security tools remain at the forefront of technological advancement. We believe everyone, from individual users to small businesses, should have access to affordable, effective cybersecurity that's easy to deploy and manage.</p>
-            
-            <section class="contact" id="contact">
-                <!-- Contact form content here -->
-            </section>
+            <div>
+                <p>Founded by a team of cybersecurity enthusiasts, Rolf Security has one mission: to create innovative, user-friendly antivirus solutions that protect people from the ever-changing world of digital threats. Our team is composed of software engineers, threat analysts, and customer service professionals dedicated to one thing—keeping you safe online.</p>
+                <p id="p-right">Over the years, we've achieved multiple industry accolades and formed strategic partnerships to ensure our security tools remain at the forefront of technological advancement. We believe everyone, from individual users to small businesses, should have access to affordable, effective cybersecurity that's easy to deploy and manage.</p>
+            </div>
         </section>
+
+        <!-- <section class="contact" id="contact">
+            <form action="">
+
+            </form>
+        </section> -->
     </main>
 
     <footer>
