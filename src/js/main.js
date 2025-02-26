@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const navbarHeight = document.querySelector('.nav').offsetHeight;
+    const navbarHeight = document.querySelector('.nav').offsetHeight + 20;
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -23,3 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+async function getCatFact() {
+    try {
+        let { fact } = await (await fetch("https://catfact.ninja/fact")).json();
+        document.getElementById("cat-fact").innerText = fact;
+    } catch {
+        document.getElementById("cat-fact").innerText = "Loading failed";
+    }
+}
